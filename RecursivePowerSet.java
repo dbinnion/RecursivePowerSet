@@ -7,11 +7,7 @@ import java.util.Set;
 public class RecursivePowerSet {
 	public static void main (String [] args)
 	{	
-		for(String s:PowerSet("abc"))
-		{
-			System.out.println(s);
-		}
-		
+		PowerSet("abc").forEach(System.out::println);		
 	}
 	public static Set<String> PowerSet(String input)
 	{	//for series of characters,
